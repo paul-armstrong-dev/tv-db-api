@@ -26,13 +26,13 @@ class TVDatabaseApi:
         logger.info(f"{self.class_name} initialised")
 
         if episode_fields is None:
-            from config import default_episode_fields
+            from default_field_config import default_episode_fields
             self.episode_fields = default_episode_fields
         else:
             self.episode_fields = episode_fields
 
         if show_fields is None:
-            from config import default_show_fields
+            from default_field_config import default_show_fields
             self.show_fields = default_show_fields
         else:
             self.show_fields = show_fields
